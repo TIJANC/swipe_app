@@ -2,15 +2,17 @@
   "name": "swipe_taks",
   "version": "1.0.0",
   "description": "simple swipe task",
-  "main": "app.js",
+  "main": "src/app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node app.js"
+    "start": "node src/app.js"
   },
   "repository": {
     "type": "git",
     "url": "swipe_task"
   },
   "author": "tijanC",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^4.4.3"
+  }
 }
