@@ -1,0 +1,95 @@
+body {
+    overflow: hidden;
+}
+
+    .main-layout {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+    .quiz-layout {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center horizontally */
+justify-content: center; /* Center vertically */
+overflow: hidden;
+}
+
+    .quiz-layout2 {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center horizontally */
+justify-content: center; /* Center vertically */
+overflow: hidden;
+}
+
+    .response-layout {
+display: flex;
+flex-direction: row;
+align-items: center; /* Center horizontally */
+overflow: auto;
+}
+
+    .center-container {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center horizontally */
+justify-content: center; /* Center vertically */
+overflow: hidden;
+}
+
+.parola.swipe {
+position: relative;
+animation: move-words 0.5s linear;
+margin: 0;
+overflow: hidden;
+}
+
+@keyframes move-words-left {
+0% { left: 0%; }
+100% { left: 100%; }
+}
+
+@keyframes move-words-right {
+0% { left: 0%; }
+100% { left: -100%; }
+}
+
+.center-container-res {
+display: flex;
+flex-direction: column;
+align-items: center; /* Center horizontally */
+justify-content: center; /* Center vertically */
+}
+
+.results-layout{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes vanish {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+.vanishing-circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: vanish 2s ease-in-out forwards; /* Apply the animation */
+}
